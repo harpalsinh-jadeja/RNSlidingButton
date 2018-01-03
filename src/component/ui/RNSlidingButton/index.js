@@ -10,7 +10,7 @@ import {
 import PropTypes from 'prop-types';
 
 
-export let SlideDirection = {
+const SlideDirection = {
     LEFT: "left",
     RIGHT: "right",
     ANY: "any"
@@ -202,7 +202,7 @@ export default class RNSlidingButton extends Component {
 RNSlidingButton.propTypes = {
     successfulSlidePercent: PropTypes.number,
     height: PropTypes.number.isRequired,
-    slideDirection: SlideDirection
+    slideDirection: PropTypes.string
 };
 
 const styles = StyleSheet.create({
@@ -220,3 +220,5 @@ const styles = StyleSheet.create({
         position: 'absolute',
     }
 });
+
+export {SlideDirection}

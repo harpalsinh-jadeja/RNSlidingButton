@@ -27,6 +27,10 @@ Very simple to use just add this component in your file.
 import {RNSlidingButton, SlideDirection} from 'rn-sliding-button';
 
 // use in your class
+onSlideRight = () => {
+    //perform Action on slide success.
+};
+
 <RNSlidingButton
   style={{
     width: 240
@@ -40,6 +44,15 @@ import {RNSlidingButton, SlideDirection} from 'rn-sliding-button';
     </Text>
   </View>
 </RNSlidingButton>
+
+const styles = StyleSheet.create({
+    titleText: {
+        fontSize: 17,
+        fontWeight: 'normal',
+        textAlign: 'center',
+        color: '#ffffff'
+    }
+});
 ```
 
 API

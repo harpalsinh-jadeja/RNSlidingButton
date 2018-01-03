@@ -10,7 +10,7 @@
   "dependencies": {
     "react": "16.0.0",
     "react-native": "0.51.0",
-    "rn-sliding-button": "^1.1.1"
+    "rn-sliding-button": "^1.1.4"
   },
   "devDependencies": {
     "babel-jest": "22.0.4",
