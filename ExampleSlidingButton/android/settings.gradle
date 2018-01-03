@@ -1,0 +1,3 @@
+rootProject.name = 'ExampleSlidingButton'
+
+include ':app'

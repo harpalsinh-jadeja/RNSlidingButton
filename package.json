@@ -1,18 +1,31 @@
 {
-  "name": "RNSlidingButton",
-  "version": "0.0.1",
-  "private": true,
+  "name": "rn-SlidingButton",
+  "version": "1.1.0",
+  "description": "SlidingButton component for react-native, same api on both android and ios.",
+  "main": "index.js",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "clear-watch": "watchman watch-del-all && watchman shutdown-server"
+    "test": "echo \"Error: no test specified\" && exit 1;"
   },
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "16.0.0",
-    "react-native": "0.51.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Happudada/RNSlidingButton.git"
   },
-  "jest": {
-    "preset": "react-native"
+  "keywords": [
+    "react-native-component",
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "sliding-button",
+    "Animation",
+    "Button-animation",
+    "button",
+    "Slide-to-accept",
+    "scrollable-button"
+  ],
+  "author": "Harpal Singh Jadeja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Happudada/RNSlidingButton/issues"
   }
 }

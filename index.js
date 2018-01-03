@@ -1,4 +1,5 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import RNSlidingButton from './src/component/ui/RNSlidingButton'
 
-AppRegistry.registerComponent('RNSlidingButton', () => App);
+export {
+    RNSlidingButton
+};
