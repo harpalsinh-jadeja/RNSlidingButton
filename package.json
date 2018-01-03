@@ -1,6 +1,6 @@
 {
   "name": "rn-sliding-button",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "SlidingButton component for react-native, same api on both android and ios.",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,10 @@
     "Button-animation",
     "button",
     "Slide-to-accept",
-    "scrollable-button"
+    "scrollable-button",
+    "slide",
+    "swipe",
+    "slider"
   ],
   "author": "Harpal Singh Jadeja",
   "license": "MIT",
