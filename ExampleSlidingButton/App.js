@@ -26,19 +26,19 @@ export default class App extends Component<{}> {
         this.setState({
             slidingMessage: "Sliding success..."
         });
-    }
+    };
 
     onSlideLeft = () => {
         this.setState({
             slidingMessage: "Sliding left success..."
         });
-    }
+    };
 
     onSlideRight = () => {
         this.setState({
             slidingMessage: "Sliding right success..."
         });
-    }
+    };
 
     render() {
         return (

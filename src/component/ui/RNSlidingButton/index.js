@@ -109,9 +109,9 @@ export default class RNSlidingButton extends Component {
     }
 
     moveButtonOut(onCompleteCallback) {
-        var self = this;
-        var startPos = this.state.initialX + this.state.dx;
-        var endPos = this.state.dx < 0 ? -this.buttonWidth : this.buttonWidth * 2;
+        let self = this;
+        let startPos = this.state.initialX + this.state.dx;
+        let endPos = this.state.dx < 0 ? -this.buttonWidth : this.buttonWidth * 2;
 
         this.setState({
             released: true,
@@ -132,9 +132,9 @@ export default class RNSlidingButton extends Component {
     }
 
     snapToPosition(onCompleteCallback) {
-        var self = this;
-        var startPos = this.state.initialX + this.state.dx;
-        var endPos = this.state.initialX;
+        let self = this;
+        let startPos = this.state.initialX + this.state.dx;
+        let endPos = this.state.initialX;
         this.setState({
             released: true,
             animatedX: new Animated.Value(startPos),
