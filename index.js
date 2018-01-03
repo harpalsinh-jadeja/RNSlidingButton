@@ -1,5 +1,6 @@
-import RNSlidingButton from './src/component/ui/RNSlidingButton'
+import RNSlidingButton, {SlideDirection} from './src/component/ui/RNSlidingButton'
 
 export {
-    RNSlidingButton
+    RNSlidingButton,
+    SlideDirection
 };

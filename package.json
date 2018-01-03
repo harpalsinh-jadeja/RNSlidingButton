@@ -1,6 +1,6 @@
 {
-  "name": "rn-SlidingButton",
-  "version": "1.1.0",
+  "name": "rn-sliding-button",
+  "version": "1.1.1",
   "description": "SlidingButton component for react-native, same api on both android and ios.",
   "main": "index.js",
   "scripts": {

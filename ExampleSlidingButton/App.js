@@ -10,7 +10,8 @@ import {
     Text,
     View
 } from 'react-native';
-import RNSlidingButton, {SlideDirection} from "./src/component/ui/RNSlidingButton";
+import {RNSlidingButton, SlideDirection} from 'rn-sliding-button';
+
 
 export default class App extends Component<{}> {
 

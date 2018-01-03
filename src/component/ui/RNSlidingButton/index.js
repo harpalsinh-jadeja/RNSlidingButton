@@ -53,7 +53,7 @@ export default class RNSlidingButton extends Component {
     }
 
     componentWillMount() {
-        var self = this;
+        let self = this;
 
         this.panResponder = PanResponder.create({
             onStartShouldSetPanResponder: (evt, gestureState) => true,
@@ -161,25 +161,26 @@ export default class RNSlidingButton extends Component {
     }
 
     render() {
-        var style = [styles.button, {
+        let style = [styles.button, {
             left: this.state.dx,
             right: this.state.dx * -1,
             backgroundColor: 'transparent',
         }];
-        if (this.state.released) {
+        let button: undefined;
 
+        if (this.state.released) {
             style = [styles.button, {
                 left: this.state.animatedX,
                 right: this.state.animatedY,
                 backgroundColor: 'transparent',
             }];
-            var button = (
+            button = (
                 <Animated.View style={style}>
                     {this.props.children}
                 </Animated.View>
             );
         } else {
-            var button = (
+            button = (
                 <View style={style}>
                     <View onLayout={this.onLayout.bind(this)}>
                         {this.props.children}
@@ -200,7 +201,8 @@ export default class RNSlidingButton extends Component {
 
 RNSlidingButton.propTypes = {
     successfulSlidePercent: PropTypes.number,
-    height: PropTypes.number.isRequired
+    height: PropTypes.number.isRequired,
+    slideDirection: SlideDirection
 };
 
 const styles = StyleSheet.create({
@@ -217,4 +219,4 @@ const styles = StyleSheet.create({
     button: {
         position: 'absolute',
     }
-})
+});
