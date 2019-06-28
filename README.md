@@ -15,7 +15,7 @@ npm install rn-sliding-button --save
 Or with YARN
 
 ```sh
-yarn install rn-sliding-button
+yarn add rn-sliding-button
 ```
 
 
