@@ -62,7 +62,7 @@ API
 | Prop           | Type       | Default               |   Description
 | -------------  |:----------:|:---------------------:|:------------------
 | height         | number     | <required>            | Height of button
-| slideDirection | string     | `SlideDirection.RIGHT`| Determines which direction to slide. Either `SlideDirection.LEFT`, `SlideDirection.RIGHT`, `SlideDirection.BOTH`.
+| slideDirection | string     | `SlideDirection.RIGHT`| Determines which direction to slide. Either `SlideDirection.LEFT`, `SlideDirection.RIGHT`, `SlideDirection.ANY`.
 | onSlidingSuccess | function   | <optional>            | Fired when slide succeeds
 | onSlide        | function   | <optional>            | Fired on every movement. Distance of movement is passed as argument.
 | successfulSlidePercent | number | <optional>        | Percent of total button width needed to slide before movement is seen as a successful slide. Default is 40.
