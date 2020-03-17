@@ -74,7 +74,7 @@ export default class RNSlidingButton extends Component {
 
             onPanResponderRelease: (evt, gestureState) => {
                 if (this.isSlideSuccessful()) {
-                    self.props.onSlidingSuccess();
+                    self.props.onSlidingSuccess(this.state.dx);
                     this.moveButtonOut(() => {
                         self.setState({swiped: true});
                     });
@@ -102,9 +102,9 @@ export default class RNSlidingButton extends Component {
         });
     }
 
-    onSlidingSuccess() {
+    onSlidingSuccess(data) {
         if (this.props.onSlidingSuccess !== undefined) {
-            this.props.onSlidingSuccess();
+            this.props.onSlidingSuccess(data);
         }
     }
 
