@@ -31,6 +31,13 @@ onSlideRight = () => {
     //perform Action on slide success.
 };
 
+//use in your class
+onSlideBoth = (x) => {
+//Here x will give you the value of your button along x-axis(left < 0 && right > 0) when your onSlideBoth function is trigerred
+//With the help of x you can perform different action when value is less than 0 and when value is 
+//greter that 0
+}
+
 <RNSlidingButton
   style={{
     width: 240
@@ -41,6 +48,21 @@ onSlideRight = () => {
   <View>
     <Text numberOfLines={1} style={styles.titleText}>
       SLIDE RIGHT TO ACCEPT >
+    </Text>
+  </View>
+</RNSlidingButton>
+
+// If you are using for both left and right i.e ANY case
+ <RNSlidingButton
+  style={{
+    width: 240
+  }}
+  height={35}
+  onSlidingSuccess={this.onSlideBoth}
+  slideDirection={SlideDirection.ANY}>
+  <View>
+    <Text numberOfLines={1} style={styles.titleText}>
+      < SLIDE IN BOTH DIRECTION >
     </Text>
   </View>
 </RNSlidingButton>
