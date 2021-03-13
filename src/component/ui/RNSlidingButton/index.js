@@ -120,12 +120,12 @@ export default class RNSlidingButton extends Component {
         }, () => {
             Animated.timing(
                 self.state.animatedX,
-                {toValue: endPos}
+                {toValue: endPos, useNativeDriver: false}
             ).start(onCompleteCallback);
 
             Animated.timing(
                 this.state.animatedY,
-                {toValue: endPos}
+                {toValue: endPos, useNativeDriver: false}
             ).start(onCompleteCallback);
 
         });
@@ -142,12 +142,12 @@ export default class RNSlidingButton extends Component {
         }, () => {
             Animated.timing(
                 this.state.animatedX,
-                {toValue: endPos}
+                {toValue: endPos, useNativeDriver: false}
             ).start(onCompleteCallback);
 
             Animated.timing(
                 this.state.animatedY,
-                {toValue: endPos}
+                {toValue: endPos, useNativeDriver: false}
             ).start(onCompleteCallback);
 
         });
